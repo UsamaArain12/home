@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="./icon1.png" type="image/x-icon">
+<style>
+    .blink {
+                animation: blinker 1.0s linear infinite;
+                color: rgb(245, 244, 248);
+                font-family: sans-serif;
+                text-align: center; 
+                /* margin: 5% 5%; */
+                font-size: xx-large;
+                /* padding-right: 300px; */
+                cursor: pointer;
+                text-decoration: underline;
+            }
+            @keyframes blinker {
+                50% {
+                    opacity: 0;
+                }
+            }
+            .marquee{
+            animation: blinker 1.5s linear infinite;
+            color: rgb(4, 102, 69);
+            font-family: sans-serif;
+            transition: all;
+            font-size: xx-large;
+            cursor: pointer;
+            border: 1px solid black;
+        }
+        @keyframes blinker {
+            50% {
+                opacity: 0;
+            }
+        }   
+
+        .main{
+    width: 100%;
+    height: 150px;
+     background-color: rgb(97, 201, 241); 
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    justify-content: space-around;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.item1{
+    /* border: 1px solid red; */
+    height: 25px;
+padding: 10px;
+margin: 10px;
+font-weight: bolder;
+color:white;
+cursor: pointer;
+text-transform: uppercase;
+}
+.item1:hover{
+    border: 1px solid blueviolet;
+padding: 10px;
+margin: 10px;
+font-weight: bolder;
+color: blueviolet;
+text-decoration: underline;
+font-size: x-large;
+cursor: pointer; 
+text-transform: capitalize;
+}
+.img1{
+    padding-right: 200px;
+    padding-top: 10px;
+    width: 100px;
+    height: 50px;
+    cursor: pointer;
+    }
+.img1:hover{
+    padding-right: 200px;
+    padding-top: 10px;
+    width: 130px;
+    height: 80px;
+    cursor: pointer;
+   }
+.button{
+    padding: 10px;
+    margin: 10px;
+    width: 150px;
+    height: 30px;
+    color: rgb(5, 5, 5);
+    background-color: turquoise;
+    font-weight: bolder;
+    cursor: pointer;
+    border: 1px solid black;
+    text-transform: capitalize;
+    border-radius: 20px;
+}
+.button:hover{
+    padding: 10px;
+    margin: 10px;
+    width: 280px;
+    height: 60px;
+    color: white;
+    text-align: center;
+    background-color: rgb(197, 43, 43);
+    cursor: pointer;
+    font-size: x-large;
+    text-decoration: underline;
+    text-transform: capitalize;
+}
+.box{
+        width: 100%;
+        height: 600px;
+        border: 1px solid red;
+        position: relative;
+        cursor: pointer;
+    }
+
+
+    
+    .main1{
+    width: 100%;
+    height: 50px;
+    background-color: rgba(168, 163, 153, 0.767);
+    display: flex;
+    flex-direction: row;
+    /* border: 1px solid black;  */
+    /* margin: auto; */
+    /* justify-content: ; */
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.search{
+    text-align: center;
+    width: 500px;
+    height: 25px;
+    margin-top: 12.5px;
+    border: none;
+    margin-left: 300px;
+    cursor: pointer;
+  }
+  .search:hover{
+    background-color: chocolate;
+    color: white;
+  }
+.r1{
+    width: 20px;
+    height: 20px;
+    margin-top: 15px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+#r1{
+    accent-color: red;
+    cursor: pointer;
+}
+.r2{  
+    width: 20px;
+    height: 20px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+#r2{
+accent-color: blue;
+cursor: pointer;
+}
+.r3{
+    width: 20px;
+    height: 20px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+#r3{
+accent-color: green;
+cursor: pointer;
+}
+input[type=search]{
+            background-image: url(./serch.png);
+            background-size: 20px;
+            background-repeat: no-repeat;
+            left: 35px;
+            text-transform: lowercase;
+            cursor: pointer;
+             }
+             input[type=search]:hover{
+            background-image: url(./serch.png);
+            background-size: 40px;
+            background-repeat: no-repeat;
+            left: 35px;
+            text-transform: lowercase;
+            cursor: pointer;
+             }
+
+             .serch12{
+                width: 25px;
+                height: 25px; 
+                background-repeat: no-repeat; 
+                right: 35px;
+                padding-top: 13px;
+                cursor: pointer;
+             }
+             .serch12:hover{
+                width: 35px;
+                height: 35px; 
+                background-repeat: no-repeat; 
+                right: 35px;
+                cursor: pointer;
+                }
+             </style>
+</head>
+<body>
+    <div class="main1">
+        <input type="radio" class="r1" id="r1" checked="checked">
+        <input type="radio" class="r2" id="r2" checked="checked">
+        <input type="radio" class="r3" id="r3" checked="checked">
+        <input type="search" size="30" maxlength="560" placeholder="serch or website name"class="search">
+        <img src="../Documents/search.png" class="serch12">
+        </div>
+<br>
+    <div class="main">
+        <img src="../Documents/logo.png" alt="" class="img1">
+        <div class="item1">Home</div>
+        <div class="item1">About</div>
+        <div class="item1">projects</div>
+        <div class="item1">Services</div>
+        <div class="item1">blog</div>
+        <div class="item1">pages</div>
+        <div class="item1">Contact</div>
+        <Button class="button">get in touch</Button>
+            </div>
+        <br>
+        <img src="../Documents/web deign.jpeg" alt="" width="100%">
+        <h1>
+            Muhammad Usama 
+            <br>
+            CCO:116775
+        </h1>
+    </div>
+</body>
+</html>
